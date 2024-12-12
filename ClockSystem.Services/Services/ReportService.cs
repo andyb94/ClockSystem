@@ -55,7 +55,7 @@ namespace ClockSystem.Services.Services
                 foreach (var recordUser in recordUsers)
                 {
                     // Ternery used. If Day is partial for user add 1 if not add 0 (stay same)
-                    incompleteDays += IsPartialDay(records.Where(x => x.UserId == recordUser).ToList()) ? 1 : 0;
+                    incompleteDays += IsPartialDay(records.Where(x => x.UserId == recordUser).OrderBy(x => x.DayClockOrder).ToList()) ? 1 : 0;
                 }
 
                 switch (dayName)
