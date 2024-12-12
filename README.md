@@ -3,6 +3,8 @@ Project for Advanced Programming Module DBS
 
 Visual Studio 2022 17.12.3 required.
 
+Will need to have installed:  .Net Desktop Development and Asp.Net and Web Development
+
 Once repo is cloned locally you will need the following Nuget packages:
 
 Microsoft.Asp.Identity.Core 2.2.4 on Services and DAL project
