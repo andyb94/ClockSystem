@@ -1,0 +1,111 @@
+﻿@model ReportViewModel
+
+<table>
+    <tr>
+        <th></th>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thur</th>
+        <th>Fri</th>
+        <th>Total</th>
+    </tr>
+
+    <tr>
+        <td class="col-1">
+            Missed Days
+        </td>
+        <td class="col-1">
+            @Model.PartialAndMissedDays.MonMissedDays
+        </td>
+        <td class="col-1">
+            @Model.PartialAndMissedDays.TueMissedDays
+        </td>
+        <td class="col-1">
+            @Model.PartialAndMissedDays.WedMissedDays
+        </td>
+        <td class="col-1">
+            @Model.PartialAndMissedDays.ThurMissedDays
+        </td>
+        <td class="col-1">
+            @Model.PartialAndMissedDays.FriMissedDays
+        </td>
+        <td class="col-1">
+            @Model.PartialAndMissedDays.TotalMissedDays
+        </td>
+    </tr>
+    <tr>
+        <td class="col-1">
+            Partial Days
+        </td>
+        <td class="col-1">
+            @Model.PartialAndMissedDays.MonIncompleteDays
+        </td>
+        <td class="col-1">
+            @Model.PartialAndMissedDays.TueIncompleteDays
+        </td>
+        <td class="col-1">
+            @Model.PartialAndMissedDays.WedIncompleteDays
+        </td>
+        <td class="col-1">
+            @Model.PartialAndMissedDays.ThurIncompleteDays
+        </td>
+        <td class="col-1">
+            @Model.PartialAndMissedDays.FriIncompleteDays
+        </td>
+        <td class="col-1">
+            @Model.PartialAndMissedDays.TotalIncompleteDays
+        </td>
+    </tr>
+    @if (Model.IncludeAbsent)
+    {
+        <tr>
+            <td class="col-1">
+                Sick Days
+            </td>
+            <td class="col-1">
+                @Model.AbsentDays.MonSickDays
+            </td>
+            <td class="col-1">
+                @Model.AbsentDays.TueSickDays
+            </td>
+            <td class="col-1">
+                @Model.AbsentDays.WedSickDays
+            </td>
+            <td class="col-1">
+                @Model.AbsentDays.ThurSickDays
+            </td>
+            <td class="col-1">
+                @Model.AbsentDays.FriSickDays
+            </td>
+            <td class="col-1">
+                @Model.AbsentDays.TotalSickDays
+            </td>
+        </tr>
+        <tr>
+            <td class="col-1">
+                Holidays
+            </td>
+            <td class="col-1">
+                @Model.AbsentDays.MonHolidayDays
+            </td>
+            <td class="col-1">
+                @Model.AbsentDays.TueHolidayDays
+            </td>
+            <td class="col-1">
+                @Model.AbsentDays.WedHolidayDays
+            </td>
+            <td class="col-1">
+                @Model.AbsentDays.ThurHolidayDays
+            </td>
+            <td class="col-1">
+                @Model.AbsentDays.FriHolidayDays
+            </td>
+            <td class="col-1">
+                @Model.AbsentDays.TotalHolidayDays
+            </td>
+        </tr>
+    }
+
+</table>
+

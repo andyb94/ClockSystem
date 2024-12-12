@@ -1,0 +1,39 @@
+﻿@model AbsenceRequestsViewModel
+
+<h2>Requests for Review</h2>
+
+<table>
+    <tr>
+        <th>Request Type</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Approve</th>
+        <th>Reject</th>
+    </tr>
+    
+    @if (Model.ListOfAbsenceRequests != null)
+    {
+        @foreach (var request in Model.ListOfAbsenceRequests)
+        {
+            <tr>
+                <td class="col-1">
+                    @request.AbsenceTypeId
+                </td>
+                <td class="col-1">
+                    @request.StartAbsenceDate
+                </td>
+                <td class="col-1">
+                    @request.EndAbsenceDate
+                </td>
+                <td class="col-1">
+                    <button class="approve-submit" value="@request.AbsenceRequestId">Approve</button>
+                </td>
+                <td class="col-1">
+                    <button class="reject-submit" value="@request.AbsenceRequestId">Reject</button>
+                </td>
+            </tr>
+        }
+    }    
+    
+</table>
+

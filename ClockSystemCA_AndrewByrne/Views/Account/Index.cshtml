@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Login Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Login</h1>
+
+    <form id="loginForm" action="/Account/Login" method="post">
+        <input type="email" name="email" id="email" placeholder="Enter Email Here" )" />
+        @Html.Password("password", "", new { placeholder = "Enter Password Here" })
+        <button type="submit">Submit</button>
+    </form>
+</div>

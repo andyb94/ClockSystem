@@ -1,0 +1,35 @@
+﻿@model UserAbsenceViewModel
+
+<h2>Your Requests to be Reviewed</h2>
+
+<table>
+    <tr>
+        <th>Request Type</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Cancel Request</th>
+    </tr>
+    
+    @if (Model.ListOfAbsenceRequests != null)
+    {
+        @foreach (var request in Model.ListOfAbsenceRequests)
+        {
+            <tr>
+                <td class="col-1">
+                    @request.AbsenceTypeId
+                </td>
+                <td class="col-1">
+                    @request.StartAbsenceDate
+                </td>
+                <td class="col-1">
+                    @request.EndAbsenceDate
+                </td>
+                <td class="col-1">
+                    <button class="cancel-submit" value="@request.AbsenceRequestId">Cancel Request</button>
+                </td>
+            </tr>
+        }
+    }    
+    
+</table>
+

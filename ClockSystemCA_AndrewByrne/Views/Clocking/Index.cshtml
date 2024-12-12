@@ -1,0 +1,52 @@
+﻿@model AddClockRecordViewModel
+
+@{
+    ViewData["Title"] = "Clocking Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Click below to clock-in to the system.</p>
+
+    <form id="clockForm" action="/Clocking/Clock" method="post">
+        @Html.Hidden("userId", Model.UserId)
+        @Html.DropDownList("clockTypeId", Model.ListOfClockTypes)
+        <input type="submit" value="Submit" />
+        </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $('#clockForm').on('submit', function (event) {
+            // Stop form submitting normally, will do manually with jquery
+            event.preventDefault();
+            // Get form url
+            var url = $(this).attr("action");
+
+            // Get values from form
+            var userId = $("#userId").val();
+            var clockTypeId = $("#clockTypeId").val();
+
+            // put values into json style object
+            var model = {
+                userId: userId,
+                clockTypeId: clockTypeId
+            };
+
+            // Post the form
+            $.ajax({
+                url: url,
+                type: 'POST',
+                data: model,
+                success: function (response) {
+                    alert("Login Successfully");
+                },
+                error: function(e) {
+                    alert("Failed to Login");
+                }
+            });
+        });
+    });
+</script>

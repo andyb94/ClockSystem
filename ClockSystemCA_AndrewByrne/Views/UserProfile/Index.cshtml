@@ -1,0 +1,24 @@
+﻿@model UserViewModel
+
+@{
+    ViewData["Title"] = "User Manager";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td class="col-2">@($"{Model.User.FirstName} {Model.User.SecondName}")</td>
+            <td class="col-3">@($"{Model.User.Email}")</td>
+            <td class="col-2">@($"{Model.User.UserRole.RoleName}")</td>
+            <td class="col-1">@Html.ActionLink("Edit", "EditUser", "UserProfile", new { userId = Model.User.UserId })</td>
+        </tr>
+    </table>
+</div>

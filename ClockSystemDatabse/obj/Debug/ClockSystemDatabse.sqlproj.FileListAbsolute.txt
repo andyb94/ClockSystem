@@ -1,0 +1,10 @@
+C:\Users\Andrew\Documents\AdvancedProgramming\ClockSystemDatabse\bin\Debug\ClockSystemDatabse.dacpac
+C:\Users\Andrew\Documents\AdvancedProgramming\ClockSystemDatabse\bin\Debug\ClockSystemDatabse.dll
+C:\Users\Andrew\Documents\AdvancedProgramming\ClockSystemDatabse\bin\Debug\ClockSystemDatabse.pdb
+C:\Users\Andrew\Documents\AdvancedProgramming\ClockSystemDatabse\obj\Debug\ClockSystemDatabse.sqlproj.AssemblyReference.cache
+C:\Users\Andrew\Documents\AdvancedProgramming\ClockSystemDatabse\obj\Debug\Model.xml
+C:\Users\Andrew\Documents\AdvancedProgramming\ClockSystemDatabse\obj\Debug\refactor.xml
+C:\Users\Andrew\Documents\AdvancedProgramming\ClockSystemDatabse\obj\Debug\postdeploy.sql
+C:\Users\Andrew\Documents\AdvancedProgramming\ClockSystemDatabse\obj\Debug\predeploy.sql
+C:\Users\Andrew\Documents\AdvancedProgramming\ClockSystemDatabse\obj\Debug\ClockSystemDatabse.dll
+C:\Users\Andrew\Documents\AdvancedProgramming\ClockSystemDatabse\obj\Debug\ClockSystemDatabse.pdb

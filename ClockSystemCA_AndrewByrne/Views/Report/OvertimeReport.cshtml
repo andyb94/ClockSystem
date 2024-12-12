@@ -1,0 +1,23 @@
+﻿@model ReportViewModel
+
+<table>
+    <tr>
+        <th>Sat</th>
+        <th>Sun</th>
+        <th>Total</th>
+    </tr>
+
+    <tr>
+        <td class="col-1">
+            @Model.OvertimeDays.SatOvertimeDays
+        </td>
+        <td class="col-1">
+            @Model.OvertimeDays.SunOvertimeDays
+        </td>
+        <td class="col-1">
+            @Model.OvertimeDays.TotalOvertimeDays
+        </td>
+    </tr>
+
+</table>
+

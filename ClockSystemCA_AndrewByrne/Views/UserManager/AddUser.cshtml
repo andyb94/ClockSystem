@@ -1,0 +1,70 @@
+﻿@model UserViewModel
+
+@{
+    ViewData["Title"] = "Add User";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Add User</h1>
+      
+
+    <form id="addUserForm" action="/UserManager/AddUser" method="post">
+        @Html.Label("First Name")
+        @Html.TextBox("firstName", "", new { placeholder = "Enter First Name Here" })
+        @Html.Label("Second Name")
+        @Html.TextBox("secondName", "", new { placeholder = "Enter Second Name Here" })
+        @Html.Label("Email")
+        <input type="email" name="email" id="email" placeholder="Enter Email Here")" />
+        @Html.Label("Password")
+        <input type="password" name="password" id="password" placeholder="Enter Password Here" )" />
+        @Html.DropDownList("roleId", Model.ListOfRoles)
+        <button type="submit">Submit</button>
+        </form>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $('#addUserForm').on('submit', function (event) {
+            // Stop form submitting normally, will do manually with jquery
+            event.preventDefault();
+            // Get form url
+            var url = $(this).attr("action");
+
+            // Get values from form
+            var firstName = $("#firstName").val();
+            var secondName = $("#secondName").val();
+            var email = $("#email").val();
+            var password = $("#password").val();
+            var roleId = $("#roleId").val();
+
+            // put values into json style object
+            var model = {
+                firstName: firstName,
+                secondName: secondName,
+                email: email,
+                password: password,
+                roleId: roleId
+            };
+
+            // Post the form
+            $.ajax({
+                url: url,
+                type: 'POST',
+                data: model,
+                success: function (response) {
+                    alert("User Created Successfully");
+
+                    // Clear text boxes to allow for a new entry
+                    $("#firstName").val('');
+                    $("#secondName").val('');
+                    $("#email").val('');
+                    $("#password").val('');
+                },
+                error: function(e) {
+                    alert("Failed to Create User");
+                }
+            });
+        });
+    });
+</script>

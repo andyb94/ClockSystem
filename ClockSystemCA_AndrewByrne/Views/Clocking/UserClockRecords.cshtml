@@ -1,0 +1,56 @@
+﻿@model WeeklyClockRecordViewModel
+
+@{
+    ViewData["Title"] = "User Clock Records Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">User Clock Records</h1>
+
+    <form id="reportForm" action="/Clocking/UserWeeklyReport" method="get">
+        <input type="date" asp-format="{0:yyyy-MM-dd}" name="date" id="date" />
+        @Html.Hidden("userId", Model.User.UserId)
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="reportPartial">
+        @await Html.PartialAsync("/Views/Clocking/UserWeeklyReport.cshtml", Model)
+    </div>
+    
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $('#reportForm').on('submit', function (event) {
+            // Stop form submitting normally, will do manually with jquery
+            event.preventDefault();
+            // Get form url
+            var url = $(this).attr("action");
+
+            // Get values from form
+            var userId = $("#userId").val();
+            var date = $("#date").val();
+
+            // put values into json style object
+            var model = {
+                userId: userId,
+                date: date
+            };
+
+            // Post the form
+            $.ajax({
+                url: url,
+                type: 'GET',
+                data: model,
+                success: function (response) {
+                    $('#reportPartial').html(response);
+                },
+                error: function(e) {
+                    alert("Failed to Login");
+                }
+            });
+        });
+    });
+</script>

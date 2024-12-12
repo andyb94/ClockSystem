@@ -1,0 +1,173 @@
+﻿@model WeeklyClockRecordViewModel
+
+@{
+    var mon = Model.Records.MonRecords;
+    var tue = Model.Records.TueRecords;
+    var wed = Model.Records.WedRecords;
+    var thur = Model.Records.ThurRecords;
+    var fri = Model.Records.FriRecords;
+    var sat = Model.Records.SatRecords;
+    var sun = Model.Records.SunRecords;
+    double hours = 0;
+}
+
+<table>
+    <tr>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thur</th>
+        <th>Fri</th>
+        <th>Sat</th>
+        <th>Sun</th>
+        <th>Flexi</th>
+    </tr>
+
+    @for (int i = 0; i < Model.MaxClockPerDay; i++)
+    {
+        <tr>
+            <td class="col-1">
+                @if (mon.Count() > i)
+                {
+                    @mon[i].ClockTime
+                }
+            </td>
+            <td class="col-1">
+                @if (tue.Count() > i)
+                {
+                    @tue[i].ClockTime
+                }
+            </td>
+            <td class="col-1">
+                @if (wed.Count() > i)
+                {
+                    @wed[i].ClockTime
+                }
+            </td>
+            <td class="col-1">
+                @if (thur.Count() > i)
+                {
+                    @thur[i].ClockTime
+                }
+            </td>
+            <td class="col-1">
+                @if (fri.Count() > i)
+                {
+                    @fri[i].ClockTime
+                }
+            </td>
+            <td class="col-1">
+                @if (sat.Count() > i)
+                {
+                    @sat[i].ClockTime
+                }
+            </td>
+            <td class="col-1">
+                @if (sun.Count() > i)
+                {
+                    @sun[i].ClockTime
+                }
+            </td>
+            <td class="col-1">
+                
+            </td>
+        </tr>
+    }
+    <tr>
+        <td class="col-1">
+            @if (mon.Count() > 1)
+            {
+                var index = 0;
+                for (int i = 0; i < mon.Count() / 2; i++)
+                {
+                    hours += (mon[index + 1].ClockTime.Subtract(mon[index].ClockTime)).TotalHours;
+                    index += 2;
+                }
+            }
+            @hours.ToString("n2")
+        </td>
+        <td class="col-1">
+            @if (tue.Count() > 1)
+            {
+                var index = 0;
+                for (int i = 0; i < tue.Count() / 2; i++)
+                {
+                    hours += (tue[index + 1].ClockTime.Subtract(tue[index].ClockTime)).TotalHours;
+                    index += 2;
+                }
+            }
+            else { hours = 0; }
+            @hours.ToString("n2")
+        </td>
+        <td class="col-1">
+            @if (wed.Count() > 1)
+            {
+                var index = 0;
+                for (int i = 0; i < wed.Count() / 2; i++)
+                {
+                    hours += (wed[index + 1].ClockTime.Subtract(wed[index].ClockTime)).TotalHours;
+                    index += 2;
+                }
+            }
+            else { hours = 0; }
+            @hours.ToString("n2")
+        </td>
+        <td class="col-1">
+            @if (thur.Count() > 1)
+            {
+                var index = 0;
+                for (int i = 0; i < thur.Count() / 2; i++)
+                {
+                    hours += (thur[index + 1].ClockTime.Subtract(thur[index].ClockTime)).TotalHours;
+                    index += 2;
+                }
+            }
+            else { hours = 0; }
+            @hours.ToString("n2")
+        </td>
+        <td class="col-1">
+            @if (fri.Count() > 1)
+            {
+                var index = 0;
+                for (int i = 0; i < fri.Count() / 2; i++)
+                {
+                    hours += (fri[index + 1].ClockTime.Subtract(fri[index].ClockTime)).TotalHours;
+                    index += 2;
+                }
+            }
+            else { hours = 0; }
+            @hours.ToString("n2")
+        </td>
+        <td class="col-1">
+            @if (sat.Count() > 1)
+            {
+                var index = 0;
+                for (int i = 0; i < sat.Count() / 2; i++)
+                {
+                    hours += (sat[index + 1].ClockTime.Subtract(sat[index].ClockTime)).TotalHours;
+                    index += 2;
+                }
+            }
+            else { hours = 0; }
+            @hours.ToString("n2")
+        </td>
+        <td class="col-1">
+            @if (sun.Count() > 1)
+            {
+                var index = 0;
+                for (int i = 0; i < sun.Count() / 2; i++)
+                {
+                    hours += (sun[index + 1].ClockTime.Subtract(sun[index].ClockTime)).TotalHours;
+                    index += 2;
+                }
+            }
+            else { hours = 0; }
+            @hours.ToString("n2")
+        </td>
+        <td class="col-1">
+            @Model.FlexiRecord.ToString("n2")
+        </td>
+    </tr>
+
+</table>
+

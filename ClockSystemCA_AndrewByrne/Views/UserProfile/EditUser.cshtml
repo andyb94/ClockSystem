@@ -1,0 +1,108 @@
+﻿@model UserViewModel
+
+@{
+    ViewData["Title"] = "Edit User";
+}
+
+<div class="text-center">
+    <h1 class="display-4">My Profile</h1>
+
+    <div class="row">
+        <h2>Update Personal Details</h2>
+        <form id="updateUserForm" action="/UserProfile/EditUser" method="post">
+            @Html.Hidden("userId", Model.User.UserId)
+            @Html.Label("First Name")
+            @Html.TextBox("firstName", Model.User.FirstName)
+            @Html.Label("Second Name")
+            @Html.TextBox("secondName", Model.User.SecondName)
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+    <hr />
+
+    <div class="row">
+        <h2>Update Password</h2>
+        <form id="updatePasswordForm" action="/UserProfile/UpdatePassword" method="post">
+            @Html.Hidden("userId", Model.User.UserId)
+            @Html.Label("Password")
+            <input type="password" name="password" id="password" placeholder="Enter Password Here" />
+            @Html.Label("Confirm Password")
+            <input type="password" name="confirmed-password" id="confirmed-password" placeholder="Re-Enter Password Here" />
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $('#updateUserForm').on('submit', function (event) {
+            // Stop form submitting normally, will do manually with jquery
+            event.preventDefault();
+            // Get form url
+            var url = $(this).attr("action");
+
+                        // Get values from form
+            var userId = $("#userId").val();
+            var firstName = $("#firstName").val();
+            var secondName = $("#secondName").val();
+
+                        // put values into json style object
+            var model = {
+                userId: userId,
+                firstName: firstName,
+                secondName: secondName
+                };
+
+                        // Post the form
+            $.ajax({
+                url: url,
+                type: 'POST',
+                data: model,
+                success: function (response) {
+                    alert("Update Successful");
+                    },
+                error: function (e) {
+                    alert("Update Failed");
+                    }
+                });
+            });
+
+            // Not sure why formatter is not fixing indentation. Only making worse no time to check
+                $('#updatePasswordForm').on('submit', function (event) {
+                                    // Stop form submitting normally, will do manually with jquery
+                                    event.preventDefault();
+                                    // Get form url
+                                    var url = $(this).attr("action");
+
+                                    // Get values from form
+                                    var userId = $("#userId").val();
+                                    var password = $("#password").val();
+                                    var confirmedPassword = $("#confirmed-password").val();
+
+                                    if(password === confirmedPassword){
+                                            // put values into json style object
+                                        var model = {
+                                            userId: userId,
+                                            password: password
+                                        };
+
+                                            // Post the form
+                                        $.ajax({
+                                            url: url,
+                                            type: 'POST',
+                                            data: model,
+                                            success: function (response) {
+                                                alert("Update Successful");
+                                            },
+                                            error: function(e) {
+                                                alert("Update Failed");
+                                            }
+                                        });
+                                    } else {
+                        alert("Passwords do not match.");
+                    }                                 
+                    });
+    });
+</script>

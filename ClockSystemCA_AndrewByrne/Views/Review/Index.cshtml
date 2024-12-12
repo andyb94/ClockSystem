@@ -1,0 +1,156 @@
+﻿@model AbsenceRequestsViewModel
+
+@{
+    ViewData["Title"] = "Absence Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Use below filters to search for active requests. Requests are retrieved based on the start date of the 
+        request only. Requests that have a start date between your start date filter and end date filter will be displayed.</p>
+
+    <form id="requestForm" action="/Review/RequestsForReviewPartial" method="post">
+        @Html.Hidden("userId", Model.UserId)
+        @Html.DropDownList("roleTypeId", Model.ListRoleTypes)
+        @Html.DropDownList("absenceTypeId", Model.ListOfAbsenceTypes)
+        <label>Start of Absence</label>
+        <input type="date" asp-format="{0:yyyy-MM-dd}" name="startDate" id="startDate" required />
+        <label>End of Absence</label>
+        <input type="date" asp-format="{0:yyyy-MM-dd}" name="endDate" id="endDate" required />
+        <input type="submit" value="Submit" />
+        </form>
+
+        <hr />
+
+        <div id="requestsData">
+            @if (Model.ListOfAbsenceRequests != null && Model.ListOfAbsenceRequests.Count > 0)
+        {
+            @await Html.PartialAsync("/Views/Review/RequestsForReviewPartial.cshtml", Model)
+        }
+        </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $('#requestForm').on('submit', function (event) {
+            // Stop form submitting normally, will do manually with jquery
+            event.preventDefault();
+            // Get form url
+            var url = $(this).attr("action");
+
+            // Get values from form
+            var userId = $("#userId").val();
+            var roleTypeId = $("#roleTypeId").val();
+            var absenceTypeId = $("#absenceTypeId").val();
+            var startDate = $("#startDate").val();
+            var endDate = $("#endDate").val();
+
+            // put values into json style object
+            var model = {
+                userId: userId,
+                roleTypeId: roleTypeId,
+                absenceTypeId: absenceTypeId,
+                startDate: startDate,
+                endDate: endDate
+            };
+
+            // Post the form
+            $.ajax({
+                url: url,
+                type: 'GET',
+                data: model,
+                success: function (response) {
+                    $('#requestsData').html(response);
+                    CreateApproveButtonEvent(userId);
+                    CreateRejectButtonEvent(userId);
+                },
+                error: function(e) {
+                    alert("Failed to get requests");
+                }
+            });
+        });
+        
+        // JS was not understanding the true/false due to conversion from the Razor. Pass as text when result is evaluated to solve conversion issue
+        var hasRequests = @(Model.ListOfAbsenceRequests != null && Model.ListOfAbsenceRequests.Count() > 0 ? "true" : "false");
+        if (hasRequests) {
+            CreateApproveButtonEvent();
+            CreateRejectButtonEvent();
+        }
+        
+        function CreateApproveButtonEvent(userId){
+            $('.approve-submit').on('click', function (event) {
+
+                // Stop form submitting normally, will do manually with jquery
+                event.preventDefault();
+                // Get form url
+                var url = '@Url.Action("CompleteRequest", "Review")';
+
+                // Get values from object that called event
+                var requestId = $(this).val();
+
+                // put values into json style object
+                var model = {
+                    requestId: requestId,
+                    userId: userId,
+                    approved: true
+                };
+
+                // Get closest TR element to the button calling the event
+                var trToRemove = $(this).closest('tr');
+
+                //Post the form
+                $.ajax({
+                    url: url,
+                    type: 'POST',
+                    data: model,
+                    success: function (response) {
+                        // Delete the tr
+                        trToRemove.remove();
+                    },
+                    error: function (e) {
+                        alert("Failed to Approve");
+                    }
+                });
+            });
+        }
+
+        function CreateRejectButtonEvent(userId) {
+            $('.reject-submit').on('click', function (event) {
+
+                // Stop form submitting normally, will do manually with jquery
+                event.preventDefault();
+                // Get form url
+                var url = '@Url.Action("CompleteRequest", "Review")';
+
+                // Get values from object that called event
+                var requestId = $(this).val();
+
+                // put values into json style object
+                var model = {
+                    requestId: requestId,
+                    userId: userId,
+                    approved: false
+                };
+
+                // Get closest TR element to the button calling the event
+                var trToRemove = $(this).closest('tr');
+
+                //Post the form
+                $.ajax({
+                    url: url,
+                    type: 'POST',
+                    data: model,
+                    success: function (response) {
+                        // Delete the tr
+                        trToRemove.remove();
+                    },
+                    error: function (e) {
+                        alert("Failed to Reject");
+                    }
+                });
+            });
+        }
+    });
+</script>

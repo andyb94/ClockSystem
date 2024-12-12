@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ClockSystemCA_AndrewByrne.props" />
+</Project>

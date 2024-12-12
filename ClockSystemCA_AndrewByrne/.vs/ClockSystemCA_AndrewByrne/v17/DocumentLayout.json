@@ -1,0 +1,323 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\ClockSystemCA_AndrewByrne\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D318EC19-CAD0-4917-9D77-62B8F6A95B80}|ClockSystemCA_AndrewByrne.csproj|c:\\users\\andrew\\documents\\advancedprogramming\\clocksystemca_andrewbyrne\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D318EC19-CAD0-4917-9D77-62B8F6A95B80}|ClockSystemCA_AndrewByrne.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FC65A57-3550-4789-B736-6C6EB69DF434}|..\\DAL\\DAL.csproj|c:\\users\\andrew\\documents\\advancedprogramming\\dal\\repos\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FC65A57-3550-4789-B736-6C6EB69DF434}|..\\DAL\\DAL.csproj|c:\\users\\andrew\\documents\\advancedprogramming\\dal\\repos\\rolerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FC65A57-3550-4789-B736-6C6EB69DF434}|..\\DAL\\DAL.csproj|c:\\users\\andrew\\documents\\advancedprogramming\\dal\\repos\\clocktyperepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FC65A57-3550-4789-B736-6C6EB69DF434}|..\\DAL\\DAL.csproj|c:\\users\\andrew\\documents\\advancedprogramming\\dal\\repos\\absencetyperepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FC65A57-3550-4789-B736-6C6EB69DF434}|..\\DAL\\DAL.csproj|c:\\users\\andrew\\documents\\advancedprogramming\\dal\\repos\\clockrecordrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84587B80-BC9F-4E5A-A0DF-872F062CC155}|..\\ClockSystem.Services\\ClockSystem.Services.csproj|c:\\users\\andrew\\documents\\advancedprogramming\\clocksystem.services\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84587B80-BC9F-4E5A-A0DF-872F062CC155}|..\\ClockSystem.Services\\ClockSystem.Services.csproj|c:\\users\\andrew\\documents\\advancedprogramming\\clocksystem.services\\services\\flexiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84587B80-BC9F-4E5A-A0DF-872F062CC155}|..\\ClockSystem.Services\\ClockSystem.Services.csproj|c:\\users\\andrew\\documents\\advancedprogramming\\clocksystem.services\\interfaces\\ireportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84587B80-BC9F-4E5A-A0DF-872F062CC155}|..\\ClockSystem.Services\\ClockSystem.Services.csproj|c:\\users\\andrew\\documents\\advancedprogramming\\clocksystem.services\\interfaces\\iroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84587B80-BC9F-4E5A-A0DF-872F062CC155}|..\\ClockSystem.Services\\ClockSystem.Services.csproj|c:\\users\\andrew\\documents\\advancedprogramming\\clocksystem.services\\interfaces\\iflexiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84587B80-BC9F-4E5A-A0DF-872F062CC155}|..\\ClockSystem.Services\\ClockSystem.Services.csproj|c:\\users\\andrew\\documents\\advancedprogramming\\clocksystem.services\\interfaces\\iclocktypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84587B80-BC9F-4E5A-A0DF-872F062CC155}|..\\ClockSystem.Services\\ClockSystem.Services.csproj|c:\\users\\andrew\\documents\\advancedprogramming\\clocksystem.services\\models\\incompleteworkeddaysrecords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84587B80-BC9F-4E5A-A0DF-872F062CC155}|..\\ClockSystem.Services\\ClockSystem.Services.csproj|c:\\users\\andrew\\documents\\advancedprogramming\\clocksystem.services\\models\\overtimerecords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84587B80-BC9F-4E5A-A0DF-872F062CC155}|..\\ClockSystem.Services\\ClockSystem.Services.csproj|c:\\users\\andrew\\documents\\advancedprogramming\\clocksystem.services\\models\\absentdayrecords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D318EC19-CAD0-4917-9D77-62B8F6A95B80}|ClockSystemCA_AndrewByrne.csproj|c:\\users\\andrew\\documents\\advancedprogramming\\clocksystemca_andrewbyrne\\controllers\\absencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D318EC19-CAD0-4917-9D77-62B8F6A95B80}|ClockSystemCA_AndrewByrne.csproj|solutionrelative:controllers\\absencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D318EC19-CAD0-4917-9D77-62B8F6A95B80}|ClockSystemCA_AndrewByrne.csproj|c:\\users\\andrew\\documents\\advancedprogramming\\clocksystemca_andrewbyrne\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D318EC19-CAD0-4917-9D77-62B8F6A95B80}|ClockSystemCA_AndrewByrne.csproj|solutionrelative:controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D318EC19-CAD0-4917-9D77-62B8F6A95B80}|ClockSystemCA_AndrewByrne.csproj|c:\\users\\andrew\\documents\\advancedprogramming\\clocksystemca_andrewbyrne\\views\\clocking\\userweeklyreport.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D318EC19-CAD0-4917-9D77-62B8F6A95B80}|ClockSystemCA_AndrewByrne.csproj|solutionrelative:views\\clocking\\userweeklyreport.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D318EC19-CAD0-4917-9D77-62B8F6A95B80}|ClockSystemCA_AndrewByrne.csproj|c:\\users\\andrew\\documents\\advancedprogramming\\clocksystemca_andrewbyrne\\models\\weeklyclockrecordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D318EC19-CAD0-4917-9D77-62B8F6A95B80}|ClockSystemCA_AndrewByrne.csproj|solutionrelative:models\\weeklyclockrecordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_ANDREW_DOCUMENTS_CLOCKSYSTEMDB.MDF/True/SqlTable/dbo.FlexiTimeRecord.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\ClockSystemCA_AndrewByrne\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\ClockSystemCA_AndrewByrne\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T00:27:11.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\DAL\\Repos\\UserRepo.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\Repos\\UserRepo.cs",
+              "ToolTip": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\DAL\\Repos\\UserRepo.cs",
+              "RelativeToolTip": "..\\DAL\\Repos\\UserRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T00:26:51.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RoleRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\DAL\\Repos\\RoleRepo.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\Repos\\RoleRepo.cs",
+              "ToolTip": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\DAL\\Repos\\RoleRepo.cs",
+              "RelativeToolTip": "..\\DAL\\Repos\\RoleRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T00:26:43.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClockTypeRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\DAL\\Repos\\ClockTypeRepo.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\Repos\\ClockTypeRepo.cs",
+              "ToolTip": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\DAL\\Repos\\ClockTypeRepo.cs",
+              "RelativeToolTip": "..\\DAL\\Repos\\ClockTypeRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T00:26:30.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AbsenceTypeRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\DAL\\Repos\\AbsenceTypeRepo.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\Repos\\AbsenceTypeRepo.cs",
+              "ToolTip": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\DAL\\Repos\\AbsenceTypeRepo.cs",
+              "RelativeToolTip": "..\\DAL\\Repos\\AbsenceTypeRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T00:26:24.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ClockRecordRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\DAL\\Repos\\ClockRecordRepo.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\Repos\\ClockRecordRepo.cs",
+              "ToolTip": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\DAL\\Repos\\ClockRecordRepo.cs",
+              "RelativeToolTip": "..\\DAL\\Repos\\ClockRecordRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T00:26:15.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\ClockSystem.Services\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "..\\ClockSystem.Services\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\ClockSystem.Services\\Services\\UserService.cs",
+              "RelativeToolTip": "..\\ClockSystem.Services\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T00:25:45.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IReportService.cs",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\ClockSystem.Services\\Interfaces\\IReportService.cs",
+              "RelativeDocumentMoniker": "..\\ClockSystem.Services\\Interfaces\\IReportService.cs",
+              "ToolTip": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\ClockSystem.Services\\Interfaces\\IReportService.cs",
+              "RelativeToolTip": "..\\ClockSystem.Services\\Interfaces\\IReportService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T00:25:15.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IRoleService.cs",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\ClockSystem.Services\\Interfaces\\IRoleService.cs",
+              "RelativeDocumentMoniker": "..\\ClockSystem.Services\\Interfaces\\IRoleService.cs",
+              "ToolTip": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\ClockSystem.Services\\Interfaces\\IRoleService.cs",
+              "RelativeToolTip": "..\\ClockSystem.Services\\Interfaces\\IRoleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T00:25:09.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IClockTypeService.cs",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\ClockSystem.Services\\Interfaces\\IClockTypeService.cs",
+              "RelativeDocumentMoniker": "..\\ClockSystem.Services\\Interfaces\\IClockTypeService.cs",
+              "ToolTip": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\ClockSystem.Services\\Interfaces\\IClockTypeService.cs",
+              "RelativeToolTip": "..\\ClockSystem.Services\\Interfaces\\IClockTypeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T00:24:59.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OvertimeRecords.cs",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\ClockSystem.Services\\Models\\OvertimeRecords.cs",
+              "RelativeDocumentMoniker": "..\\ClockSystem.Services\\Models\\OvertimeRecords.cs",
+              "ToolTip": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\ClockSystem.Services\\Models\\OvertimeRecords.cs",
+              "RelativeToolTip": "..\\ClockSystem.Services\\Models\\OvertimeRecords.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T00:24:33.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FlexiService.cs",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\ClockSystem.Services\\Services\\FlexiService.cs",
+              "RelativeDocumentMoniker": "..\\ClockSystem.Services\\Services\\FlexiService.cs",
+              "ToolTip": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\ClockSystem.Services\\Services\\FlexiService.cs",
+              "RelativeToolTip": "..\\ClockSystem.Services\\Services\\FlexiService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T00:13:53.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IncompleteWorkedDaysRecords.cs",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\ClockSystem.Services\\Models\\IncompleteWorkedDaysRecords.cs",
+              "RelativeDocumentMoniker": "..\\ClockSystem.Services\\Models\\IncompleteWorkedDaysRecords.cs",
+              "ToolTip": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\ClockSystem.Services\\Models\\IncompleteWorkedDaysRecords.cs",
+              "RelativeToolTip": "..\\ClockSystem.Services\\Models\\IncompleteWorkedDaysRecords.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T00:24:27.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IFlexiService.cs",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\ClockSystem.Services\\Interfaces\\IFlexiService.cs",
+              "RelativeDocumentMoniker": "..\\ClockSystem.Services\\Interfaces\\IFlexiService.cs",
+              "ToolTip": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\ClockSystem.Services\\Interfaces\\IFlexiService.cs",
+              "RelativeToolTip": "..\\ClockSystem.Services\\Interfaces\\IFlexiService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T00:14:32.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AbsentDayRecords.cs",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\ClockSystem.Services\\Models\\AbsentDayRecords.cs",
+              "RelativeDocumentMoniker": "..\\ClockSystem.Services\\Models\\AbsentDayRecords.cs",
+              "ToolTip": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\ClockSystem.Services\\Models\\AbsentDayRecords.cs",
+              "RelativeToolTip": "..\\ClockSystem.Services\\Models\\AbsentDayRecords.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T00:24:17.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ReviewController.cs",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\ClockSystemCA_AndrewByrne\\Controllers\\ReviewController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReviewController.cs",
+              "ToolTip": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\ClockSystemCA_AndrewByrne\\Controllers\\ReviewController.cs",
+              "RelativeToolTip": "Controllers\\ReviewController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T00:23:51.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AbsenceController.cs",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\ClockSystemCA_AndrewByrne\\Controllers\\AbsenceController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AbsenceController.cs",
+              "ToolTip": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\ClockSystemCA_AndrewByrne\\Controllers\\AbsenceController.cs",
+              "RelativeToolTip": "Controllers\\AbsenceController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T00:23:09.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UserWeeklyReport.cshtml",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\ClockSystemCA_AndrewByrne\\Views\\Clocking\\UserWeeklyReport.cshtml",
+              "RelativeDocumentMoniker": "Views\\Clocking\\UserWeeklyReport.cshtml",
+              "ToolTip": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\ClockSystemCA_AndrewByrne\\Views\\Clocking\\UserWeeklyReport.cshtml",
+              "RelativeToolTip": "Views\\Clocking\\UserWeeklyReport.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T22:43:35.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "WeeklyClockRecordViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\ClockSystemCA_AndrewByrne\\Models\\WeeklyClockRecordViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\WeeklyClockRecordViewModel.cs",
+              "ToolTip": "C:\\Users\\Andrew\\Documents\\AdvancedProgramming\\ClockSystemCA_AndrewByrne\\Models\\WeeklyClockRecordViewModel.cs",
+              "RelativeToolTip": "Models\\WeeklyClockRecordViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T22:28:36.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "dbo.FlexiTimeRecord.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_ANDREW_DOCUMENTS_CLOCKSYSTEMDB.MDF/True/SqlTable/dbo.FlexiTimeRecord.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_ANDREW_DOCUMENTS_CLOCKSYSTEMDB.MDF/True/SqlTable/dbo.FlexiTimeRecord.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-12T00:10:32.034Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

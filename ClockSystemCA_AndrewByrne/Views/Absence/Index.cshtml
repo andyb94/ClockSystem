@@ -1,0 +1,141 @@
+﻿@model UserAbsenceViewModel
+
+@{
+    ViewData["Title"] = "Absence Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Click below to submit an absence request to the system.</p>
+
+    <form id="absenceForm" action="/Absence/SubmitRequest" method="post">
+        @Html.Hidden("userId", Model.UserId)
+        @Html.DropDownList("absenceTypeId", Model.ListOfAbsenceTypes)
+        <label>Start of Absence</label>
+        <input type="date" asp-format="{0:yyyy-MM-dd}" name="startDate" id="startDate" />
+        <label>End of Absence</label>
+        <input type="date" asp-format="{0:yyyy-MM-dd}" name="endDate" id="endDate" />
+        <input type="submit" value="Submit" />
+        </form>
+
+        <hr />
+
+        <div id="requestsData">
+            @if (Model.ListOfAbsenceRequests != null && Model.ListOfAbsenceRequests.Count > 0)
+        {
+            @await Html.PartialAsync("/Views/Absence/PersonalRequestsPartial.cshtml", Model)
+        }
+        </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $('#absenceForm').on('submit', function (event) {
+            // Stop form submitting normally, will do manually with jquery
+            event.preventDefault();
+            // Get form url
+            var url = $(this).attr("action");
+
+            // Get values from form
+            var userId = $("#userId").val();
+            var absenceTypeId = $("#absenceTypeId").val();
+            var startDate = $("#startDate").val();
+            var endDate = $("#endDate").val();
+
+            if(endDate >= startDate){
+                // put values into json style object
+                var model = {
+                    userId: userId,
+                    absenceTypeId: absenceTypeId,
+                    startDate: startDate,
+                    endDate: endDate
+                };
+
+                // Post the form
+                $.ajax({
+                    url: url,
+                    type: 'POST',
+                    data: model,
+                    success: function (response) {
+                        alert("Successful Submission");
+                        GetRequestsForUser(userId);
+                    },
+                    error: function (e) {
+                        alert("Failed to Submit");
+                    }
+                });
+            }
+            else {
+                alert("End Date must be the same or later than Start Date.");
+            }
+
+            
+        });
+
+        function GetRequestsForUser(userId){
+            // Get url for AJAX
+            var requestsUrl = '@Url.Action("PersonalRequestsPartial", "Absence")';
+
+            // put values into json style object
+            var requestModel = {
+                userId: userId
+            };
+
+            $.ajax({
+                url: requestsUrl,
+                type: 'GET',
+                data: requestModel,
+                success: function (response) {
+                    $('#requestsData').html(response);
+                    CreateCancelButtonEvent();
+                },
+                error: function (e) {
+                    alert("Failed to get requests");
+                }
+            });
+        }
+
+        // JS was not understanding the true/false due to conversion from the Razor. Pass as text when result is evaluated to solve conversion issue
+        var hasRequests = @(Model.ListOfAbsenceRequests != null && Model.ListOfAbsenceRequests.Count() > 0 ? "true" : "false");
+        if (hasRequests) {
+            CreateCancelButtonEvent();
+        }
+        
+        function CreateCancelButtonEvent(){
+            $('.cancel-submit').on('click', function (event) {
+
+                // Stop form submitting normally, will do manually with jquery
+                event.preventDefault();
+                // Get form url
+                var url = '@Url.Action("CancelRequest", "Absence")';
+
+                // Get values from object that called event
+                var requestId = $(this).val();
+
+                // put values into json style object
+                var model = {
+                    requestId: requestId
+                };
+
+                // Get closest TR element to the button calling the event
+                var trToRemove = $(this).closest('tr');
+
+                //Post the form
+                $.ajax({
+                    url: url,
+                    type: 'POST',
+                    data: model,
+                    success: function (response) {
+                        // Delete the tr
+                        trToRemove.remove();
+                    },
+                    error: function (e) {
+                        alert("Failed to Delete");
+                    }
+                });
+            });
+        }
+    });
+</script>

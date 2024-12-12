@@ -1,0 +1,88 @@
+23/11/2024 17:54:25	This log contains information about the import schema operation into project 'ClockSystemDatabse' on computer 'DESKTOP-VUHSPCS' by user 'Andrew'.
+23/11/2024 17:54:26	Import of database schema has started.
+23/11/2024 17:54:35	Gathering database credentials
+23/11/2024 17:54:35	Gathering database options
+23/11/2024 17:54:35	Gathering generic database scoped configuration option
+23/11/2024 17:54:35	Gathering users
+23/11/2024 17:54:35	Gathering roles
+23/11/2024 17:54:35	Gathering application roles
+23/11/2024 17:54:35	Gathering role memberships
+23/11/2024 17:54:35	Gathering filegroups
+23/11/2024 17:54:35	Gathering full-text catalogs
+23/11/2024 17:54:35	Gathering assemblies
+23/11/2024 17:54:35	Gathering certificates
+23/11/2024 17:54:35	Gathering asymmetric keys
+23/11/2024 17:54:35	Gathering symmetric keys
+23/11/2024 17:54:35	Gathering encrypted symmetric keys
+23/11/2024 17:54:35	Gathering schemas
+23/11/2024 17:54:35	Gathering XML schema collections
+23/11/2024 17:54:35	Gathering user-defined data types
+23/11/2024 17:54:35	Gathering user-defined types
+23/11/2024 17:54:35	Gathering table types
+23/11/2024 17:54:35	Gathering unique keys for table types
+23/11/2024 17:54:35	Gathering primary keys for table types
+23/11/2024 17:54:35	Gathering indexes for table types
+23/11/2024 17:54:36	Gathering check constraints for table types
+23/11/2024 17:54:36	Gathering default constraints for table types
+23/11/2024 17:54:36	Gathering partition functions
+23/11/2024 17:54:36	Gathering partition schemes
+23/11/2024 17:54:36	Gathering functions
+23/11/2024 17:54:36	Gathering encrypted functions
+23/11/2024 17:54:36	Gathering aggregates
+23/11/2024 17:54:36	Gathering procedures
+23/11/2024 17:54:36	Gathering encrypted procedures
+23/11/2024 17:54:36	Gathering tables
+23/11/2024 17:54:36	Gathering primary keys
+23/11/2024 17:54:36	Gathering unique constraints
+23/11/2024 17:54:36	Gathering foreign keys
+23/11/2024 17:54:36	Gathering default constraints
+23/11/2024 17:54:36	Gathering check constraints
+23/11/2024 17:54:36	Gathering views
+23/11/2024 17:54:36	Gathering encrypted views
+23/11/2024 17:54:36	Gathering indexes
+23/11/2024 17:54:36	Gathering statistics
+23/11/2024 17:54:36	Gathering full-text index stoplists
+23/11/2024 17:54:36	Gathering search property lists
+23/11/2024 17:54:36	Gathering search properties
+23/11/2024 17:54:36	Gathering full-text indexes
+23/11/2024 17:54:36	Gathering column store indexes
+23/11/2024 17:54:36	Gathering spatial indexes
+23/11/2024 17:54:36	Gathering XML indexes
+23/11/2024 17:54:36	Gathering Selective XML indexes
+23/11/2024 17:54:36	Gathering encrypted triggers
+23/11/2024 17:54:36	Gathering triggers
+23/11/2024 17:54:36	Gathering encrypted and clr ddl triggers
+23/11/2024 17:54:36	Gathering ddl triggers
+23/11/2024 17:54:36	Creating edge constraints
+23/11/2024 17:54:36	Gathering synonyms
+23/11/2024 17:54:36	Gathering defaults
+23/11/2024 17:54:36	Gathering data constraint uddt bindings
+23/11/2024 17:54:36	Gathering rules
+23/11/2024 17:54:36	Gathering data constraint uddt bindings
+23/11/2024 17:54:36	Gathering message types
+23/11/2024 17:54:36	Gathering queues
+23/11/2024 17:54:36	Gathering contracts
+23/11/2024 17:54:36	Gathering services
+23/11/2024 17:54:36	Gathering event notifications
+23/11/2024 17:54:36	Gathering remote service bindings
+23/11/2024 17:54:36	Gathering broker priorities
+23/11/2024 17:54:36	Gathering signatures
+23/11/2024 17:54:36	Gathering compression options
+23/11/2024 17:54:36	Gathering sequence types
+23/11/2024 17:54:36	Gathering security policies
+23/11/2024 17:54:36	Gather column encryption keys
+23/11/2024 17:54:36	Gathering column master keys
+23/11/2024 17:54:36	Gathering external data sources
+23/11/2024 17:54:36	Gathering external file formats
+23/11/2024 17:54:36	Gathering external tables
+23/11/2024 17:54:36	Gathering database permissions
+23/11/2024 17:54:36	Gathering extended properties
+23/11/2024 17:54:36	Gathering assemblies
+23/11/2024 17:54:36	Gathering credentials
+23/11/2024 17:54:36	Gathering logins
+23/11/2024 17:54:36	Gathering server audits
+23/11/2024 17:54:38	Scanning project for duplicate elements
+23/11/2024 17:54:39	Finished duplicate element processing
+23/11/2024 17:54:39	Finished importing database.
+23/11/2024 17:54:39	A summary of the import was saved to the following location: C:\Users\Andrew\Documents\AdvancedProgramming\ClockSystemDatabse\Import Schema Logs\ClockSystemDatabse_20241123055425.log
+23/11/2024 17:54:39	Click Finish to continue...

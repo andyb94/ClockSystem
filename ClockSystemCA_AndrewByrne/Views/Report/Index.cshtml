@@ -1,0 +1,102 @@
+﻿@model ReportViewModel
+
+@{
+    ViewData["Title"] = "Reports Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Report</h1>
+
+    @if (!Model.OvertimeReport)
+    {
+        <h2>Absences Report</h2>
+        <form id="reportForm" action="/Report/AdminReport" method="get">
+            <input type="date" asp-format="{0:yyyy-MM-dd}" name="startDate" id="startDate" />
+            <input type="date" asp-format="{0:yyyy-MM-dd}" name="endDate" id="endDate" />
+            @Html.DropDownList("includeAbsent", Model.IncludeAbsentSelectList)
+            <button type="submit">Submit</button>
+        </form>
+    }
+    else
+    {
+        <h2>Overtime Report</h2>
+        <form id="overtimeReportForm" action="/Report/OvertimeReport" method="get">
+            <input type="date" asp-format="{0:yyyy-MM-dd}" name="startDate" id="startDate" />
+            <input type="date" asp-format="{0:yyyy-MM-dd}" name="endDate" id="endDate" />
+            <button type="submit">Submit</button>
+        </form>
+    }
+
+    <div id="reportPartial">
+        
+    </div>
+    
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $('#reportForm').on('submit', function (event) {
+            // Stop form submitting normally, will do manually with jquery
+            event.preventDefault();
+            // Get form url
+            var url = $(this).attr("action");
+
+            // Get values from form
+            var startDate = $("#startDate").val();
+            var endDate = $("#endDate").val();
+            var includeAbsent = $("#includeAbsent").val();
+
+            // put values into json style object
+            var model = {
+                startDate: startDate,
+                endDate: endDate,
+                includeAbsent: includeAbsent
+            };
+
+            // Post the form
+            $.ajax({
+                url: url,
+                type: 'GET',
+                data: model,
+                success: function (response) {
+                    $('#reportPartial').html(response);
+                },
+                error: function(e) {
+                    alert("No data found");
+                }
+            });
+        });
+
+        $('#overtimeReportForm').on('submit', function (event) {
+            // Stop form submitting normally, will do manually with jquery
+            event.preventDefault();
+            // Get form url
+            var url = $(this).attr("action");
+
+            // Get values from form
+            var startDate = $("#startDate").val();
+            var endDate = $("#endDate").val();
+
+            // put values into json style object
+            var model = {
+                startDate: startDate,
+                endDate: endDate
+            };
+
+            // Post the form
+            $.ajax({
+                url: url,
+                type: 'GET',
+                data: model,
+                success: function (response) {
+                    $('#reportPartial').html(response);
+                },
+                error: function (e) {
+                    alert("No data found");
+                }
+            });
+        });
+    });
+</script>
