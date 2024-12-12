@@ -37,7 +37,10 @@ Visual Studio uses IIS Express
 
 Ensure you have SQL Server running to host the database.
 
+The Database project is no longer needed and you can remove if it causes issues since db is directly accessed now.
+
 Project should be good to run now.
+On first run if it prompts question about certificate click to accept. If the page then mentions security alert click to advance anyway this is just due to ssl cert.
 
 Login for Admin default user is Test@Admin.ie Employee user is Test@Employee.ie both use the password "test".
 System stores passwords as hashes in Database. You can change code to enforce more strict requirements for password.
